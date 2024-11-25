@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restoran Padang</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,600;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- style -->
+    <link rel="stylesheet" href="css/style.css" />
+
+
+  </head>
+
+  <body>
+    <!-- Navigasi start-->
+    <div id="nav-placeholder"></div>
+    <!-- Feather Icons Script -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+      feather.replace();
+
+      fetch("nav.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("nav-placeholder").innerHTML = data;
+        });
+    </script>
+    <!-- Navigasi end-->
+
+    <!-- Home section start -->
+    <section class="home" id="home">
+      <main class="content">
+        <h1>Mari Nikmati Hidangan <span>Khas Padang</span></h1>
+        <p>
+          Hidangan khas Padang adalah perpaduan sempurna rempah-rempah autentik
+          dan tradisi Minang. Setiap suapan menghadirkan cita rasa kaya, dari
+          rendang yang lembut hingga sambal hijau yang menggugah selera.
+        </p>
+        <a href="#" class="cta">Pesan Sekarang</a>
+      </main>
+    </section>
+    <!-- Home section end -->
+
+    <!-- Restoran Section Start -->
+    <section id="restoran" class="restoran">
+      <h2><span>Restoran</span> Padang Sederhana</h2>
+
+      <div class="row">
+        <div class="restoran-img">
+          <img src="img/toko.png" alt="Restoran Kami" />
+        </div>
+        <div class="content">
+          <p>
+            Didirikan pada tahun 2010, Restoran Padang Sederhana telah menjadi
+            pilihan favorit untuk menikmati masakan khas Padang yang autentik.
+          </p>
+          <p>
+            Terletak di Tanah Abang, Jakarta, kami mengutamakan cita rasa
+            tradisional dengan bahan-bahan segar dan berkualitas. Kami
+            berkomitmen untuk menghadirkan pengalaman kuliner terbaik bagi para
+            pelanggan, dengan suasana yang hangat dan pelayanan yang ramah.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Restoran Section End -->
+
+    <!-- Menu Favorit Start -->
+    <section class="products" id="products" x-data="products">
+      <h2><span>Produk Unggulan</span> Kami</h2>
+      <p>
+        Selamat datang di surga kuliner khas Padang! Setiap hidangan yang kami sajikan dibuat dengan resep turun-temurun, menghadirkan rasa autentik yang menggugah selera. Nikmati ayam pop yang lembut, gulai ayam yang kaya rempah, dan masih banyak lagi menu spesial yang siap memanjakan Anda. Pilih favorit Anda dan rasakan sensasi nikmatnya!
+      </p>
+    
+      <div class="product-item">
+        <div class="product-card">
+          <div class="product-img">
+            <img src="img/produk/ayam-bakar.jpg" alt="Ayam Bakar" />
+          </div>
+      
+          <div class="product-content">
+            <h3>Ayam Bakar</h3>
+            <div class="product-stars">
+              <svg width="24" height="24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <use href="img/feather-sprite.svg#star" />
+              </svg>
+              <svg width="24" height="24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <use href="img/feather-sprite.svg#star" />
+              </svg>
+              <svg width="24" height="24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <use href="img/feather-sprite.svg#star" />
+              </svg>
+              <svg width="24" height="24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <use href="img/feather-sprite.svg#star" />
+              </svg>
+              <svg width="24" height="24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <use href="img/feather-sprite.svg#star" />
+              </svg>
+            </div>
+          </div>
+      
+          <div class="product-price">
+            <span x-text="rupiah(item.price)"></span>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img">
+            <img src="img/produk/ayam-bakar.jpg" alt="Ayam Bakar" />
+          </div>
+      
+          <div class="product-content">
+            <h3>Ayam Bakar</h3>
+            <div class="product-stars">
+              <svg width="24" height="24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <use href="img/feather-sprite.svg#star" />
+              </svg>
+              <svg width="24" height="24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <use href="img/feather-sprite.svg#star" />
+              </svg>
+              <svg width="24" height="24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <use href="img/feather-sprite.svg#star" />
+              </svg>
+              <svg width="24" height="24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <use href="img/feather-sprite.svg#star" />
+              </svg>
+              <svg width="24" height="24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <use href="img/feather-sprite.svg#star" />
+              </svg>
+            </div>
+
+
+        
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img">
+          <img src="img/produk/ayam-bakar.jpg" alt="Ayam Bakar" />
+        </div>
+    
+        <div class="product-content">
+          <h3>Ayam Bakar</h3>
+          <div class="product-stars">
+            <svg width="24" height="24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <use href="img/feather-sprite.svg#star" />
+            </svg>
+            <svg width="24" height="24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <use href="img/feather-sprite.svg#star" />
+            </svg>
+            <svg width="24" height="24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <use href="img/feather-sprite.svg#star" />
+            </svg>
+            <svg width="24" height="24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <use href="img/feather-sprite.svg#star" />
+            </svg>
+            <svg width="24" height="24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <use href="img/feather-sprite.svg#star" />
+            </svg>
+          </div>
+        </div>
+
+        </div>
+        
+        </div>
+      
+    </section>
+    <!-- Menu Favorit End -->
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Feather Icons Script -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+      feather.replace();
+
+      // Load footer
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+          feather.replace(); // Pastikan ikon feather muncul setelah pemuatan
+        });
+    </script>
+    <!-- Fungsi Javascript -->
+    <script src="js/script.js" defer></script>
+  </body>
+</html>

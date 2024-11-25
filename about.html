@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restoran Padang</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,600;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- style -->
+    <link rel="stylesheet" href="css/style.css" />
+
+  </head>
+
+  <body>
+    <!-- Navigasi start-->
+    <div id="nav-placeholder"></div>
+    <!-- Feather Icons Script -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+      feather.replace();
+
+      fetch("nav.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("nav-placeholder").innerHTML = data;
+        });
+    </script>
+    <!-- Navigasi end-->
+
+    <!-- Restoran Section Start -->
+    <section id="about" class="about">
+      <h2><span>Tentang</span> Kami</h2>
+
+      <div class="row">
+        <div class="about-img">
+          <img src="img/about.png" alt="Restoran Kami" />
+        </div>
+        <div class="content">
+          <h3>Restoran Padang <span>Sederhana</span></h3>
+          <p>
+            Didirikan pada tahun 2010, Restoran Padang Sederhana hadir sebagai
+            pilihan utama untuk menikmati kelezatan masakan khas Padang yang
+            autentik. Kami percaya bahwa setiap hidangan memiliki cerita, dan
+            itulah mengapa kami selalu menyajikan masakan dengan bumbu
+            tradisional yang kaya rasa dan penuh kenangan. Dengan komitmen
+            terhadap kualitas, kami menggunakan bahan-bahan segar yang dipilih
+            secara langsung untuk memastikan pengalaman kuliner terbaik bagi
+            setiap pelanggan.
+          </p>
+          <p>
+            Terletak di pusat kota Jakarta, Restoran Padang Sederhana menjadi
+            tempat favorit bagi keluarga, teman, dan kolega untuk menikmati
+            waktu bersama. Desain interior kami menggabungkan nuansa modern
+            dengan sentuhan tradisional, menciptakan suasana yang hangat dan
+            nyaman bagi semua pengunjung. Kami tidak hanya berfokus pada rasa,
+            tetapi juga pada pelayanan ramah yang menjadi ciri khas kami selama
+            lebih dari satu dekade.
+          </p>
+          <p>
+            Kami juga terus berinovasi dalam menyajikan beragam menu baru tanpa
+            melupakan resep tradisional yang telah menjadi warisan budaya. Misi
+            kami adalah menghadirkan cita rasa asli Minangkabau kepada dunia,
+            sambil terus menjunjung tinggi nilai-nilai lokal. Restoran Padang
+            Sederhana bukan hanya tempat makan, tetapi juga ruang untuk berbagi
+            cerita dan menciptakan kenangan indah bersama orang terdekat.
+          </p>
+        </div>
+      </div>
+
+      <h5><span>Tim</span> Kami</h5>
+      <div class="tim-kami">
+          <div class="tim">
+              <img src="img/awal.jpg" alt="Muh. Awaluddin" class="tim-img" />
+              <h3 class="nama">Muh. Awaluddin</h3>
+              <p class="jabatan">Executive Chef</p>
+              <p class="tugas">Memimpin tim dan membuat website</p>
+          <div class="social-icons">
+            <a href="https://facebook.com/ahmad"
+              ><i data-feather="facebook" class="fb"></i
+            ></a>
+            <a href="https://facebook.com/ahmad"
+              ><i data-feather="twitter" class="twit"></i
+            ></a>
+            <a href="https://facebook.com/ahmad"
+              ><i data-feather="instagram" class="ig"></i
+            ></a>
+          </div>
+        </div>
+        <div class="tim">
+          <img src="img/anggi.jpeg" alt="Anggi Dian" class="tim-img" />
+          <h3 class="nama">Anggi Dian</h3>
+          <p class="jabatan">Manager Operasional</p>
+          <p class="tugas">Menambahkan dan melengkapi fitur website</p>
+          <div class="social-icons">
+            <a href="https://facebook.com/ahmad"
+              ><i data-feather="facebook" class="fb"></i
+            ></a>
+            <a href="https://facebook.com/ahmad"
+              ><i data-feather="twitter" class="twit"></i
+            ></a>
+            <a href="https://facebook.com/ahmad"
+              ><i data-feather="instagram" class="ig"></i
+            ></a>
+          </div>
+          
+        </div>
+        <div class="tim">
+          <img src="img/chandra.jpg" alt="Chandra Wijaya" class="tim-img" />
+          <h3 class="nama">Chandra Wijaya</h3>
+          <p class="jabatan">Network Engineer</p>
+          <p class="tugas">Membuat makalah dan memberi saran</p>
+          <div class="social-icons">
+            <a href="https://facebook.com/ahmad"
+              ><i data-feather="facebook" class="fb"></i
+            ></a>
+            <a href="https://facebook.com/ahmad"
+              ><i data-feather="twitter" class="twit"></i
+            ></a>
+            <a href="https://facebook.com/ahmad"
+              ><i data-feather="instagram" class="ig"></i
+            ></a>
+          </div>
+          
+        </div>
+        <div class="tim">
+          <img src="img/ari.jpg" alt="Ahmad Ariful" class="tim-img" />
+          <h3 class="nama">Ahmad Ariful</h3>
+          <p class="jabatan">Server Senior</p>
+          <p class="tugas">Membuat Slide ppt dan memberi saran</p>
+          <div class="social-icons">
+            <a href="https://facebook.com/ahmad"
+              ><i data-feather="facebook" class="fb"></i
+            ></a>
+            <a href="https://facebook.com/ahmad"
+              ><i data-feather="twitter" class="twit"></i
+            ></a>
+            <a href="https://facebook.com/ahmad"
+              ><i data-feather="instagram" class="ig"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Restoran Section End -->
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Feather Icons Script -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+      feather.replace();
+
+      // Load footer
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+          feather.replace(); // Pastikan ikon feather muncul setelah pemuatan
+        });
+    </script>
+
+<!-- Fungsi Javascript -->
+<script src="js/script.js" defer></script>
+  </body>
+</html>
