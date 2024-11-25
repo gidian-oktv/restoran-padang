@@ -52,7 +52,7 @@ body {
 .navbar .navbar-nav a {
   color: #fff;
   display: inline-block;
-  font-family: 1.3rem;
+  font-family: 1.5rem;
   margin: 0 1rem;
 }
 
@@ -157,7 +157,8 @@ body {
 .restoran,
 .about,
 .contact,
-.products {
+.products,
+.menu {
   padding: 8rem 7% 1.4rem;
 }
 
@@ -167,7 +168,8 @@ body {
 .about h3,
 .contact h2,
 .contact h3,
-.products h2 {
+.products h2,
+.menu h2 {
   text-align: center;
   font-size: 2.6rem;
   margin-bottom: 3rem;
@@ -178,7 +180,8 @@ body {
 h5 span,
 h3 span,
 .contact h2 span,
-.products h2 span {
+.products h2 span,
+.menu h2 span {
   color: var(--primary);
 }
 
@@ -263,6 +266,8 @@ h3 span,
   color: var(--primary);
 }
 
+
+
 /* Tentang Kami */
 .about .row {
   display: block;
@@ -341,6 +346,57 @@ h3 span,
   color: #fff;
 }
 
+/* Daftar Menu Section */
+.menu {
+  margin: auto;
+}
+
+.menu h3 {
+  color: var(--primary);
+  text-align: center;
+  font-size: 2.6rem;
+  margin: 3rem auto;
+}
+
+.menu .ayam-item,
+.menu .ikan-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.menu .ayam-item .ayam-card,
+.menu .ikan-item .ikan-card {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 calc(25% - 2rem);
+  max-width: 20rem;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  padding: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ayam-item .ayam-img,
+.ikan-item .ikan-img {
+  padding: 1rem 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.ayam-item .ayam-img img,
+.ikan-item .ikan-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+
 /*  Kontak Section */
 .contact .row {
   display: block;
@@ -348,7 +404,7 @@ h3 span,
   background-color: var(--bg);
 }
 
-.contact p {
+.contact p, .menu p {
   text-align: center;
   font-weight: 300;
   font-size: 1.5rem;
@@ -549,16 +605,26 @@ footer .credit a {
     flex-wrap: wrap;
     max-width: 90%;
     margin: auto;
-    display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
   }
+
+  .menu .ayam-item .ayam-card,
+  .menu .ikan-item .ikan-card {
+    flex: 1 1 calc(50% - 1rem);
+  }
+
 }
 
 /* Mobile */
 @media (max-width: 450px) {
   html {
     font-size: 55%;
+  }
+
+  .menu .ayam-item .ayam-card,
+  .menu .ikan-item .ikan-card {
+    flex: 1 1 100%;
   }
 }
