@@ -156,9 +156,9 @@ body {
 
 .restoran,
 .about,
-.contact, 
+.contact,
 .products {
-  padding: 5rem 7% 1.4rem;
+  padding: 8rem 7% 1.4rem;
 }
 
 .restoran h2,
@@ -216,7 +216,6 @@ h3 span,
 .products {
   margin: auto;
 }
-
 
 .products .product-item {
   display: flex;
@@ -543,6 +542,17 @@ footer .credit a {
     max-width: 70%;
     place-items: center;
     margin: auto;
+  }
+
+  .products .product-item {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 }
 
