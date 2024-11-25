@@ -20,7 +20,6 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: var(--bg);
   color: #fff;
-  /* min-height: 2000px; */
 }
 
 /* navbar */
@@ -266,8 +265,6 @@ h3 span,
   color: var(--primary);
 }
 
-
-
 /* Tentang Kami */
 .about .row {
   display: block;
@@ -355,11 +352,31 @@ h3 span,
   color: var(--primary);
   text-align: center;
   font-size: 2.6rem;
-  margin: 3rem auto;
+  margin: 4rem auto;
+  margin-top: 6rem;
+  border-bottom: 1px solid var(--primary);
+  border-top: 1px solid var(--primary);
+  padding: 0.5rem;
 }
 
-.menu .ayam-item,
-.menu .ikan-item {
+.menu a {
+  color: var(--primary);
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: #fff;
+}
+
+#ayam,
+#ikan,
+#daging,
+#tambahan,
+#minuman {
+  scroll-margin-top: 8rem;
+}
+
+.menu .menu-item {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -367,35 +384,35 @@ h3 span,
   gap: 1.5rem;
 }
 
-.menu .ayam-item .ayam-card,
-.menu .ikan-item .ikan-card {
+.menu .menu-item .menu-card {
   display: flex;
   flex-direction: column;
   flex: 1 1 calc(25% - 2rem);
   max-width: 20rem;
   align-items: center;
   text-align: center;
-  margin: auto;
   padding: 2rem;
   border: 1px solid #ccc;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.ayam-item .ayam-img,
-.ikan-item .ikan-img {
+.menu-item .menu-img {
   padding: 1rem 0;
   width: 100%;
   overflow: hidden;
 }
 
-.ayam-item .ayam-img img,
-.ikan-item .ikan-img img {
+.menu-item .menu-img img {
   width: 100%;
   height: auto;
   object-fit: cover;
 }
 
+.menu-content,
+.menu-price {
+  font-size: 1.5rem;
+}
 
 /*  Kontak Section */
 .contact .row {
@@ -404,7 +421,8 @@ h3 span,
   background-color: var(--bg);
 }
 
-.contact p, .menu p {
+.contact p,
+.menu p {
   text-align: center;
   font-weight: 300;
   font-size: 1.5rem;
@@ -610,11 +628,9 @@ footer .credit a {
     text-align: center;
   }
 
-  .menu .ayam-item .ayam-card,
-  .menu .ikan-item .ikan-card {
+  .menu .menu-item .menu-card {
     flex: 1 1 calc(50% - 1rem);
   }
-
 }
 
 /* Mobile */
@@ -623,8 +639,7 @@ footer .credit a {
     font-size: 55%;
   }
 
-  .menu .ayam-item .ayam-card,
-  .menu .ikan-item .ikan-card {
-    flex: 1 1 100%;
+  .menu .menu-item .menu-card {
+    flex: 1 1 calc(50% - 1rem);
   }
 }

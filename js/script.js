@@ -13,8 +13,9 @@ document.addEventListener("DOMContentLoaded", () => {
       const hamburger = document.querySelector("#hamburger-menu");
 
       if (hamburger) {
-        hamburger.onclick = () => {
+        hamburger.onclick = (e) => {
           navbarNav.classList.toggle("active");
+          e.preventDefault();
         };
 
         document.addEventListener("click", (e) => {
@@ -51,6 +52,44 @@ document.addEventListener("alpine:init", () => {
       { id: 6, name: "Udang Balado", img: "udang-balado.jpg", price: 25000},
     ],
   }));
+
+  Alpine.data("daging", () => ({
+    items: [
+      { id: 1, name: "Rendang", img:"rendang.jpg", price: 23000},
+      { id: 2, name: "Dendeng Balado",img: "dendeng-balado.jpg", price: 25000},
+      { id: 3, name: "Cincang Gulai",img: "gulai-cincang.jpg", price: 25000},
+      { id: 4, name: "Babat Gulai",img: "gulai-babat.jpg", price: 24000},
+      { id: 5, name: "Gulai Kikil",img: "gulai-kikil.jpg", price: 24000},
+    ]
+  }));
+
+  Alpine.data("tambahan", () => ({
+    items: [
+      { id: 1, name: "Nasi Putih", img:"nasi.jpeg", price: 8000},
+      { id: 2, name: "Ati Ampela Balado",img: "ati-ampela-balado.jpg", price: 11000},
+      { id: 3, name: "Sambal",img: "sambal.jpg", price: 5000},
+      { id: 4, name: "Telur Balado",img: "telur-balado.jpe", price: 8000},
+      { id: 5, name: "Sayur Asem",img: "sayur-asam.jpe", price: 12000},
+      { id: 6, name: "Perkedel",img: "perkedel.jpg", price: 5000},
+      { id: 7, name: "Kerupuk Kulit",img: "kerupuk-kulit.jpg", price: 10000},
+    ]
+  }));
+
+  Alpine.data("minuman", () => ({
+    items: [
+      { id: 1, name: "Aqua 330mL", img:"aqua.png", price: 8000},
+      { id: 2, name: "Teh Tawar",img: "teh-tawar.jpg", price: 8000},
+      { id: 3, name: "Teh Manis Panas",img: "teh-manis-anget.jpg", price: 10000},
+      { id: 4, name: "Teh Manis Dingin",img: "teh-manis-dingin.jpg", price: 10000},
+      { id: 5, name: "Kopi Hitam",img: "kopi-hitam.jpeg", price: 10000},
+      { id: 6, name: "Jus Alpukat",img: "jus-alpukat.jpg", price: 18000},
+      { id: 7, name: "Jus Jambu",img: "jus-jambu.jpg", price: 18000},
+      { id: 8, name: "Jus Mangga",img: "jus-mangga.jpg", price: 18000},
+      { id: 9, name: "Jus Jeruk",img: "jus-jeruk.jpg", price: 15000},
+    ]
+  }));
+
+
 });
 // Alpine Ayam End
 

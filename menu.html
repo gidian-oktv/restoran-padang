@@ -26,8 +26,6 @@
       defer
       src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
     ></script>
-
-    
   </head>
 
   <body>
@@ -49,46 +47,102 @@
     <!-- Menu Start -->
     <section class="menu" id="menu">
       <h2>Menu <span>Kami</span></h2>
-      <p>Dibawah ini adalah beberapa menu yang tersedia di restoran kami</p>
-      <h3>Ayam</h3>
-      <div class="ayam-item" x-data="ayam">
-        <template x-for="(item, index) in items" :key="index">
-        <div class="ayam-card">
-          <div class="ayam-img">
-            <img :src="'img/produk/' + item.img" :alt="item.name" />
-          </div>
+      <p>Beberapa menu yang tersedia di restoran kami</p>
+      <p>
+        <a href="#ayam">Ayam </a> | <a href="#ikan">Ikan  </a
+        >| <a href="#daging">Daging </a> | <a href="#tambahan">Menu Tambahan  </a
+        >| <a href="#minuman">Minuman</a>
+      </p>
 
-          <div class="ayam-content">
-            <h4 x-text="item.name"></h4>
-          </div>
-          <div class="ayam-price">
-            <span x-text="rupiah(item.price)"></span>
-          </div>
-        </div>
-      </template>
-      </div>
-      
-      <h3>Ikan</h3>
-      <div class="ikan-item" x-data="ikan">
+      <h3 id="ayam">Ayam</h3>
+      <div class="menu-item" x-data="ayam">
         <template x-for="(item, index) in items" :key="index">
-        <div class="ikan-card">
-          <div class="ikan-img">
-            <img :src="'img/produk/' + item.img" :alt="item.name" />
-          </div>
+          <div class="menu-card">
+            <div class="menu-img">
+              <img :src="'img/produk/' + item.img" :alt="item.name" />
+            </div>
 
-          <div class="ikan-content">
-            <h4 x-text="item.name"></h4>
+            <div class="menu-content">
+              <h4 x-text="item.name"></h4>
+            </div>
+            <div class="menu-price">
+              <span x-text="rupiah(item.price)"></span>
+            </div>
           </div>
-          <div class="ikan-price">
-            <span x-text="rupiah(item.price)"></span>
-          </div>
-        </div>
-      </template>
+        </template>
       </div>
 
-      <h3>Daging</h3>
-      <h3>Menu Tambahan</h3>
-      <h3>Minuman</h3>
+      <h3 id="ikan">Ikan</h3>
+      <div class="menu-item" x-data="ikan">
+        <template x-for="(item, index) in items" :key="index">
+          <div class="menu-card">
+            <div class="menu-img">
+              <img :src="'img/produk/' + item.img" :alt="item.name" />
+            </div>
+
+            <div class="menu-content">
+              <h4 x-text="item.name"></h4>
+            </div>
+            <div class="menu-price">
+              <span x-text="rupiah(item.price)"></span>
+            </div>
+          </div>
+        </template>
+      </div>
+
+      <h3 id="daging">Daging</h3>
+      <div class="menu-item" x-data="daging">
+        <template x-for="(item, index) in items" :key="index">
+          <div class="menu-card">
+            <div class="menu-img">
+              <img :src="'img/produk/' + item.img" :alt="item.name" />
+            </div>
+
+            <div class="menu-content">
+              <h4 x-text="item.name"></h4>
+            </div>
+            <div class="menu-price">
+              <span x-text="rupiah(item.price)"></span>
+            </div>
+          </div>
+        </template>
+      </div>
+
+      <h3 id="tambahan">Menu Tambahan</h3>
+      <div class="menu-item" x-data="tambahan">
+        <template x-for="(item, index) in items" :key="index">
+          <div class="menu-card">
+            <div class="menu-img">
+              <img :src="'img/produk/' + item.img" :alt="item.name" />
+            </div>
+
+            <div class="menu-content">
+              <h4 x-text="item.name"></h4>
+            </div>
+            <div class="menu-price">
+              <span x-text="rupiah(item.price)"></span>
+            </div>
+          </div>
+        </template>
+      </div>
+
+      <h3 id="minuman">Minuman</h3>
+      <div class="menu-item" x-data="minuman">
+        <template x-for="(item, index) in items" :key="index">
+          <div class="menu-card">
+            <div class="menu-img">
+              <img :src="'img/produk/' + item.img" :alt="item.name" />
+            </div>
+
+            <div class="menu-content">
+              <h4 x-text="item.name"></h4>
+            </div>
+            <div class="menu-price">
+              <span x-text="rupiah(item.price)"></span>
+            </div>
+          </div>
+        </template>
+      </div>
     </section>
     <!-- Menu End -->
 
