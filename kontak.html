@@ -56,25 +56,25 @@
           referrerpolicy="no-referrer-when-downgrade"
           class="maps"
         ></iframe>
-        <h3>Formulir Pemesanan</h3>
-        <form action="" class="form">
+        <h3 id="formulir">Formulir Pemesanan</h3>
+        <form action="" class="form"">
           <div class="input-group">
             <i data-feather="user"></i>
-            <input type="text" placeholder="Nama" />
-          </div>
-          <div class="input-group">
-            <i data-feather="mail"></i>
-            <input type="text" placeholder="Email" />
+            <input type="text" placeholder="Nama" id="name-wa"/>
           </div>
           <div class="input-group">
             <i data-feather="phone"></i>
-            <input type="text" placeholder="Nomor HP" />
+            <input type="text" placeholder="Nomor HP" id="hp-wa"/>
+          </div>
+          <div class="input-group">
+            <i data-feather="map-pin"></i>
+            <input type="text" placeholder="Alamat" id="address-wa" />
           </div>
           <div class="input-group">
             <i data-feather="book-open"></i>
             <textarea name="pesanan" id="pesanan" placeholder="Pesanan Anda" rows="5"></textarea>
           </div>
-          <button type="submit" class="btn">Kirim Pesan</button>
+          <button type="submit" class="btn" id="wa-btn">Kirim Pesan</button>
         </form>
       </div>
     </section>

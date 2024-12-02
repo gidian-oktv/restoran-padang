@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restoran Padang</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,600;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- style -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Alpine js -->
+    <script defer src="js/script.js"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+  </head>
+
+  <body>
+    <!-- Navigasi start-->
+    <div id="nav-placeholder"></div>
+    <!-- Feather Icons Script -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+      feather.replace();
+
+      fetch("nav.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("nav-placeholder").innerHTML = data;
+        });
+    </script>
+    <!-- Navigasi end-->
+
+    <!-- Menu Start -->
+    <section class="paket" id="paket">
+      <h2>Daftar Paket<span> Kami</span></h2>
+      <p>Beberapa daftar menu paket yang tersedia di restoran kami</p>
+
+      <div class="paket-item" x-data="paket">
+        <template x-for="(item, index) in items" :key="index">
+        <div class="paket-card">
+          <div class="paket-img">
+            <img :src="'img/produk/' + item.img" :alt="item.name" />
+          </div>
+
+          <div class="paket-content">
+            <h4 x-text="item.name"></h4>
+          </div>
+          <div class="paket-price">
+            <span x-text="rupiah(item.price)"></span>
+          </div>
+          <div class="paket-keterangan">
+            <h5 x-text="item.keterangan"></h5>
+          </div>
+
+        </div>
+        </template>
+      
+      </div>
+    </section>
+    <!-- Menu End -->
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Feather Icons Script -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+      feather.replace();
+
+      // Load footer
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+          feather.replace(); // Pastikan ikon feather muncul setelah pemuatan
+        });
+    </script>
+    <!-- Fungsi Javascript -->
+    <script src="js/script.js" defer></script>
+  </body>
+</html>
